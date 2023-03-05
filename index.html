@@ -1,0 +1,91 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>FACTURE</h1>
+			<address>
+				<p>RSA DIESEL SERVICE ROUTIER</p>
+				<p>2-2551 Hogan h2k2t5<br>Tel:(438)-933-6562</p>
+				<p>rsadiesel@gmail.com</p>
+				<br>
+				<p class="strong">Vendu à :
+					<br>
+					<p contenteditable></p>
+				</p>
+			</address>
+			<address class="container">
+				<p>Numero : <span contenteditable></span></p><br>
+				<p>Date :<span contenteditable></span></p>
+			</address>
+			<address class="container1">
+				<p class="strong">Appel de service  à :
+					<br>
+					<p contenteditable></p>
+				</p>
+			</address>
+		</header>
+		<article>
+			<table class="inventory">
+				<thead>
+					<tr>
+						<th>
+							<span>Article</span>
+						  </th>
+						  <th colspan="1">
+							<span>Description</span>
+						  </th>
+						  <th>
+							<span>Quantité/Heure</span>
+						  </th>
+						  <th>
+							<span>Prix Unit</span>
+						  </th>
+						  <th>
+							<span>Montant</span>
+						  </th>
+					</tr>
+				</thead>
+				<tbody id="body">
+				</tbody>
+			</table>
+			<a class="add" id="add">+</a>
+
+			<table class="balance">
+				<tr>
+					<th><span >Montant hors taxes</span></th>
+					<td><span data-prefix>$</span><span id="TotalSansTaxe">0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >TPS(5%)</span></th>
+					<td><span data-prefix>$</span><span id="TPS">0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >TVQ(9.975%)</span></th>
+					<td><span data-prefix>$</span><span id="TVQ">0.00</span></td>
+				</tr>
+				<tr>
+					<th><span >Montant avec taxes</span></th>
+					<td><span data-prefix>$</span><span id="TotalAvecTaxe">0.00</span></td>
+				</tr>
+			</table>
+		</article>
+		<aside>
+			<h1>
+				<span >Remarque</span>
+			</h1>
+			<div contenteditable>
+				PAYABLE À L'ORDRE DE RSA DIESEL SERVICE ROUTIER<br>
+				<br>
+				Numero de TPS/TVH: #751509407RT0001<br>
+				<br>
+				Numero de TVQ: #4010903144TQ0001<br>
+			</div>
+		</aside>
+	</body>
+</html>
